@@ -1,0 +1,58 @@
+Data (read only), src->scripts->R/Python, output, results
+license.md, citation.cff
+
+R
+.
+├── .gitignore
+├── CITATION.cff
+├── LICENSE.md
+├── README.md
+├── data               <- All project data, ignored by git
+│   ├── processed      <- Final, canonical data sets (PG)
+│   ├── raw            <- Original, immutable data dump (RO)
+│   └── temp           <- Intermediate transformed data (PG)
+├── docs               <- Documentation for users (HW)
+│   ├── manuscript     <- Manuscript source (HW)
+│   └── reports        <- Reports, notebooks (HW)
+├── results
+│   ├── figures        <- Figures (PG)
+│   └── output         <- Other output (PG)
+├── R                  <- Source code (HW)
+└── MyProject.Rproj    <- R Project File (PG)
+
+
+Python
+.
+├── .gitignore
+├── CITATION.cff
+├── LICENSE.md
+├── README.md
+├── requirements.txt
+├── data               <- All project data, ignored by git
+│   ├── processed      <- Final, canonical data sets (PG)
+│   ├── raw            <- Original, immutable data dump (RO)
+│   └── temp           <- Intermediate transformed data (PG)
+├── docs               <- Documentation for users (HW)
+│   ├── manuscript     <- Manuscript source (HW)
+│   └── reports        <- Reports, notebooks (HW)
+├── results
+│   ├── figures        <- Figures (PG)
+│   └── output         <- Other output (PG)
+└── src                <- Source code (HW)
+
+
+Alternaitv
+mein-projekt/
+├── README.md          # Startseite: Zweck, Ablauf, Voraussetzungen
+├── LICENSE            # Lizenz für den Code
+├── CITATION.cff       # wie man das Projekt zitiert
+├── renv.lock          # Paketversionen
+├── .gitignore
+├── mein-projekt.Rproj
+├── data_raw/          # Rohdaten, nie verändern
+├── data_clean/        # erzeugte, bereinigte Daten
+├── code/              # R-Skripte
+│   ├── 00_einlesen.R
+│   └── 01_auswertung.R
+├── figures/           # erzeugte Grafiken
+└── paper/ oder docs/  # Text, Bericht, Dokumentation
